@@ -44,8 +44,8 @@ const states = [
   {
     name: "Arkansas",
     abbreviation: "AR",
-  }
-
+  },
+]
 
 const Form = () => {
   return (
