@@ -70,6 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.2
+  - Fix package.json
 - v1.1.1
   - Add type/core-js
 - v1.1.0
