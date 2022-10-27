@@ -74,6 +74,8 @@ export default Form;
 
 ## Version history
 
+- v1.2.1
+  - Fix : add add react dependency
 - v1.2.0
   - Feat : add style to option(s)
 - v1.0.0

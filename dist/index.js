@@ -1,21 +1,24 @@
+import React from "react";
+
 /**
  * Module
  * @function
  * @param {Array} options - options of dropdown
  * @returns {HTMLOptionElement}
  */
-const DropdownMenu = ({
-  options
-}) => {
-  if (Array.isArray(options) && typeof options[0] === "string") {
-    const optionsSort = options.sort();
+const DropdownMenu = props => {
+  if (Array.isArray(props.options) && typeof props.options[0] === "string") {
+    const optionsSort = props.options.sort();
     return optionsSort.map(option => {
-      return /*#__PURE__*/React.createElement("option", {
+      return props.customClass ? /*#__PURE__*/React.createElement("option", {
+        class: props.customClass,
+        key: option
+      }, option) : /*#__PURE__*/React.createElement("option", {
         key: option
       }, option);
     });
   } else {
-    const optionsSort = options.sort((a, b) => {
+    const optionsSort = props.options.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
@@ -25,7 +28,10 @@ const DropdownMenu = ({
       return 0;
     });
     return optionsSort.map(option => {
-      return /*#__PURE__*/React.createElement("option", {
+      return props.customClass ? /*#__PURE__*/React.createElement("option", {
+        class: props.customClass,
+        key: option.name
+      }, option.name) : /*#__PURE__*/React.createElement("option", {
         key: option.name
       }, option.name);
     });
