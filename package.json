@@ -1,7 +1,7 @@
 {
   "name": "@cecigiu2b/dropdown-menu",
   "main": "dist/index.js",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": false,
   "dependencies": {
     "react": "^18.2.0",
