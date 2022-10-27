@@ -70,6 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.1
+  - Add type/core-js
 - v1.1.0
   - Add babel
   - Delete useless files and dependencies
