@@ -6,7 +6,7 @@ Module for generating a list of options of a selection from an array.
 
 Using npm :
 
-`npm i @cecigiu2b/drowpdown-menu`
+`npm i @cecigiu2b/dropdown-menu`
 
 ## Required
 
@@ -18,7 +18,7 @@ Using npm :
 In the project directory, you can run:
 
 ```
-import { DropdownMenu } from '@cecigiu2b/drowpdown-menu'
+import { DropdownMenu } from '@cecigiu2b/dropdown-menu'
 
 const departements = [
   "Sales",
@@ -70,6 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.3
+  - patch babel
 - v1.1.2
   - Fix package.json
 - v1.1.1

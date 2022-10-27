@@ -20,9 +20,7 @@ const DropdownMenu = _ref => {
   if (Array.isArray(options) && typeof options[0] === "string") {
     const optionsSort = options.sort();
     return optionsSort.map(option => {
-      return /*#__PURE__*/_react.default.createElement("option", {
-        key: option
-      }, option);
+      return <option key={option}>{option}</option>;
     });
   } else {
     const optionsSort = options.sort((a, b) => {
@@ -35,9 +33,7 @@ const DropdownMenu = _ref => {
       return 0;
     });
     return optionsSort.map(option => {
-      return /*#__PURE__*/_react.default.createElement("option", {
-        key: option.name
-      }, option.name);
+      return <option key={option.name}>{option.name}</option>;
     });
   }
 };
