@@ -13,6 +13,10 @@ Using npm :
 - React
 - props options must be array type of string or array of object with a key "name"
 
+## Style
+
+You can style your component by adding a name class to customClass prop
+
 ## Exemple
 
 In the project directory, you can run:
@@ -54,7 +58,7 @@ const Form = () => {
       <form>
         <select name="departement" id="departement">
           {" "}
-          <DropdownMenu options={departements} />
+          <DropdownMenu options={departements} customClass="optionDepartement"/>
         </select>
         <select name="states" id="states">
           {" "}
@@ -70,5 +74,7 @@ export default Form;
 
 ## Version history
 
+- v1.2.0
+  - Feat : add style to option(s)
 - v1.0.0
   - Version initiale
