@@ -29,4 +29,4 @@ const DropdownMenu = ({ options }) => {
   }
 };
 
-export default DropdownMenu;
+export { DropdownMenu };

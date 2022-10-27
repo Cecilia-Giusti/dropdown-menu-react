@@ -1,5 +1,5 @@
 import React from "react";
-import DropdownMenu from "./lib";
+import { DropdownMenu } from "./lib";
 import { departements } from "./data/departments";
 import { states } from "./data/states";
 
