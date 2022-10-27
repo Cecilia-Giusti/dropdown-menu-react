@@ -70,6 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.4
+  - fix new babel
 - v1.1.3
   - patch babel
 - v1.1.2
