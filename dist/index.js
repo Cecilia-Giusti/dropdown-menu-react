@@ -1,18 +1,20 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true,
-});
+import React from "react";
+
 /**
  * Module
  * @function
  * @param {Array} options - options of dropdown
  * @returns {HTMLOptionElement}
  */
-const DropdownMenu = (_ref) => {
-  let { options } = _ref;
+const DropdownMenu = ({
+  options
+}) => {
   if (Array.isArray(options) && typeof options[0] === "string") {
     const optionsSort = options.sort();
-    return optionsSort.map((option) => {
-      return <option key={option}>{option}</option>;
+    return optionsSort.map(option => {
+      return /*#__PURE__*/React.createElement("option", {
+        key: option
+      }, option);
     });
   } else {
     const optionsSort = options.sort((a, b) => {
@@ -24,10 +26,11 @@ const DropdownMenu = (_ref) => {
       }
       return 0;
     });
-    return optionsSort.map((option) => {
-      return <option key={option.name}>{option.name}</option>;
+    return optionsSort.map(option => {
+      return /*#__PURE__*/React.createElement("option", {
+        key: option.name
+      }, option.name);
     });
   }
 };
-const _DropdownMenu = DropdownMenu;
-export { _DropdownMenu as DropdownMenu };
+export { DropdownMenu };

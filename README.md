@@ -70,6 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.5
+  - fix babel with react
 - v1.1.4
   - fix new babel
 - v1.1.3
