@@ -10,7 +10,8 @@ Using npm :
 
 ## Required
 
-props options must be array type of string or array of object with a key "name"
+- React
+- props options must be array type of string or array of object with a key "name"
 
 ## Exemple
 
