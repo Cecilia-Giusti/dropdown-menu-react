@@ -70,5 +70,8 @@ export default Form;
 
 ## Version history
 
+- v1.1.0
+  - Add babel
+  - Delete useless files and dependencies
 - v1.0.0
-  - Initial release
+  - Version initiale
