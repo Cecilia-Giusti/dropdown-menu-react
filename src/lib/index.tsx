@@ -3,15 +3,18 @@ import React from "react";
 /**
  * Module
  * @function
- * @param {Array} options - options of dropdown
- * @returns {HTMLOptionElement}
+ * @param {Array} props.options - options of dropdown
+ * @return {JSX.Element[]}
  */
-const DropdownMenu = (props) => {
+const DropdownMenu = (props: {
+  options: Array<any>;
+  customClass?: string;
+}): JSX.Element[] => {
   if (Array.isArray(props.options) && typeof props.options[0] === "string") {
     const optionsSort = props.options.sort();
     return optionsSort.map((option) => {
       return props.customClass ? (
-        <option class={props.customClass} key={option}>
+        <option className={props.customClass} key={option}>
           {option}
         </option>
       ) : (
@@ -31,7 +34,7 @@ const DropdownMenu = (props) => {
     });
     return optionsSort.map((option) => {
       return props.customClass ? (
-        <option class={props.customClass} key={option.name}>
+        <option className={props.customClass} key={option.name}>
           {option.name}
         </option>
       ) : (

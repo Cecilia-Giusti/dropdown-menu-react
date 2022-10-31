@@ -11,6 +11,7 @@ Using npm :
 ## Required
 
 - React
+- TypeScript
 - props options must be array type of string or array of object with a key "name"
 
 ## Style
@@ -74,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.3.0
+  - Add TypeScript
 - v1.2.1
   - Fix : add add react dependency
 - v1.2.0
