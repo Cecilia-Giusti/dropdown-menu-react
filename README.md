@@ -75,7 +75,7 @@ export default Form;
 
 ## Version history
 
-- v1.4.5
+- v1.4.7
   - Delete webpack and update modern code
 - v1.4.3
   - Add webpack config
