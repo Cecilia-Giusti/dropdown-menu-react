@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.4.2
+  - Fix TypeScript, update browserslist
 - v1.4.1
   - Fix TypeScript, fix types
 - v1.4.0
