@@ -75,7 +75,7 @@ export default Form;
 
 ## Version history
 
-- v1.3.1
+- v1.3.2
   - Fix TypeScript, add interfaces
 - v1.3.0
   - Add TypeScript
