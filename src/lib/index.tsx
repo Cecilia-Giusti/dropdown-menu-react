@@ -1,28 +1,26 @@
 import React from "react";
+import { DropdownMenuProps, optionObjectInt } from "./types";
 
-/**
- * Module
- * @function
- * @param {Array} props.options - options of dropdown
- * @return {JSX.Element[]}
- */
-const DropdownMenu = (props: {
-  options: Array<any>;
-  customClass?: string;
-}): JSX.Element[] => {
-  if (Array.isArray(props.options) && typeof props.options[0] === "string") {
-    const optionsSort = props.options.sort();
+/** */
+const DropdownMenu = ({
+  options,
+  customClass,
+}: DropdownMenuProps): JSX.Element[] => {
+  if (typeof options[0] === "string") {
+    const optionsSort = options.sort();
     return optionsSort.map((option) => {
-      return props.customClass ? (
-        <option className={props.customClass} key={option}>
-          {option}
+      let optionString = option as string;
+      return customClass ? (
+        <option className={customClass} key={optionString}>
+          {optionString}
         </option>
       ) : (
-        <option key={option}>{option}</option>
+        <option key={optionString}>{optionString}</option>
       );
     });
   } else {
-    const optionsSort = props.options.sort((a, b) => {
+    const optionsObject = options as Array<optionObjectInt>;
+    const optionsSort = optionsObject.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
       }
@@ -33,8 +31,8 @@ const DropdownMenu = (props: {
       return 0;
     });
     return optionsSort.map((option) => {
-      return props.customClass ? (
-        <option className={props.customClass} key={option.name}>
+      return customClass ? (
+        <option className={customClass} key={option.name}>
           {option.name}
         </option>
       ) : (
