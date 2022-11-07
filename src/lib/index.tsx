@@ -1,21 +1,28 @@
 import React from "react";
 import { DropdownMenuProps, optionObjectInt } from "./types";
 
+const OptionComponent = (
+  props: JSX.IntrinsicAttributes &
+    React.ClassAttributes<HTMLOptionElement> &
+    React.OptionHTMLAttributes<HTMLOptionElement>
+) => {
+  return <option {...props}>{props.id}</option>;
+};
+
 /** */
-const DropdownMenu = ({
-  options,
-  customClass,
-}: DropdownMenuProps): JSX.Element[] => {
+const DropdownMenu = ({ options, customClass }: DropdownMenuProps) => {
   if (typeof options[0] === "string") {
     const optionsSort = options.sort();
     return optionsSort.map((option) => {
       let optionString = option as string;
       return customClass ? (
-        <option className={customClass} key={optionString}>
-          {optionString}
-        </option>
+        <OptionComponent
+          className={customClass}
+          key={optionString}
+          id={optionString}
+        />
       ) : (
-        <option key={optionString}>{optionString}</option>
+        <OptionComponent key={optionString} id={optionString} />
       );
     });
   } else {
@@ -32,11 +39,13 @@ const DropdownMenu = ({
     });
     return optionsSort.map((option) => {
       return customClass ? (
-        <option className={customClass} key={option.name}>
-          {option.name}
-        </option>
+        <OptionComponent
+          className={customClass}
+          key={option.name}
+          id={option.name}
+        />
       ) : (
-        <option key={option.name}>{option.name}</option>
+        <OptionComponent key={option.name} id={option.name} />
       );
     });
   }
