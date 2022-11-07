@@ -1,9 +1,10 @@
 {
   "name": "@cecigiu2b/dropdown-menu-react",
   "main": "dist/index.tsx",
-  "version": "1.4.2",
+  "version": "1.4.1",
   "private": false,
   "dependencies": {
+    "@expo/webpack-config": "^0.17.3",
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.8",
     "@types/react": "^18.0.24",
@@ -25,11 +26,18 @@
       "react-app/jest"
     ]
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.6",
