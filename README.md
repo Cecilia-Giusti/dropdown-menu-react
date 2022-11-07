@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.3.5
+  - Fix TypeScript, fix index.tsx, return string
 - v1.3.4
   - Fix TypeScript, fix index.tsx
 - v1.3.3
