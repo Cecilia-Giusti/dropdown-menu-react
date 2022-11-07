@@ -7,3 +7,9 @@ export interface DropdownMenuProps {
 export interface optionObjectInt {
   name: string;
 }
+
+export interface optionComponentInt {
+  className?: string;
+  key: string;
+  id: string;
+}

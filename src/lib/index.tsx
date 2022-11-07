@@ -1,11 +1,11 @@
 import React from "react";
-import { DropdownMenuProps, optionObjectInt } from "./types";
+import {
+  DropdownMenuProps,
+  optionComponentInt,
+  optionObjectInt,
+} from "./types";
 
-const OptionComponent = (
-  props: JSX.IntrinsicAttributes &
-    React.ClassAttributes<HTMLOptionElement> &
-    React.OptionHTMLAttributes<HTMLOptionElement>
-) => {
+const OptionComponent = (props: optionComponentInt) => {
   return <option {...props}>{props.id}</option>;
 };
 
