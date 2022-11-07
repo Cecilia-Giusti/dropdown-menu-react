@@ -6,7 +6,11 @@ import {
 } from "./types";
 
 const OptionComponent = (props: optionComponentInt) => {
-  return <option {...props}>{props.id}</option>;
+  return (
+    <option className={props.className} id={props.id}>
+      {props.id}
+    </option>
+  );
 };
 
 const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
