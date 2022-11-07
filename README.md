@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.3.4
+  - Fix TypeScript, fix index.tsx
 - v1.3.3
   - Fix TypeScript, add a React option component
 - v1.3.2

@@ -1,6 +1,6 @@
 {
   "name": "@cecigiu2b/dropdown-menu-react",
-  "main": "dist/index.js",
+  "main": "dist/index.tsx",
   "version": "1.3.3",
   "private": false,
   "dependencies": {
