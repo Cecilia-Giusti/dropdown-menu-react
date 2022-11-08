@@ -75,8 +75,8 @@ export default Form;
 
 ## Version history
 
-- v1.5.13
-  - Patch compile index in js
+- v1.5.14
+  - Patch index.tsx
 - v1.5.11
   - Patch fix tsconfig
 - v1.5.9
