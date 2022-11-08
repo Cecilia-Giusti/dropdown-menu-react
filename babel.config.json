@@ -7,7 +7,13 @@
          "isTSX": true,
          "allExtensions": true
        }
-     ]
+     ],[
+      "@babel/preset-react",
+      {
+        "isTSX": true,
+        "allExtensions": true
+      }
+    ]
    ]
    
  

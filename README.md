@@ -76,7 +76,7 @@ export default Form;
 ## Version history
 
 - v1.5.14
-  - Patch index.tsx
+  - Patch transform tsx to js
 - v1.5.11
   - Patch fix tsconfig
 - v1.5.9
