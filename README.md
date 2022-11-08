@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.5.11
+  - Patch fix tsconfig
 - v1.5.9
   - Patch fix name main file
 - v1.5.8
