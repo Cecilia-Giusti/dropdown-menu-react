@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.5.3
+  -Patch update browser
 - v1.5.2
   -Patch Update babel and update key in component
 - v1.5.0
