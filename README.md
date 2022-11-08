@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.5.4
+  -Patch add tsconfig
 - v1.5.3
   -Patch update browser
 - v1.5.2
