@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  DropdownMenuProps,
-  optionComponentInt,
-  optionObjectInt,
-} from "./types";
-
-const OptionComponent = (props: optionComponentInt) => {
-  return (
-    <option className={props.className} id={props.id}>
-      {props.id}
-    </option>
-  );
-};
+import { DropdownMenuProps, optionObjectInt } from "./types";
 
 const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
   if (typeof options[0] === "string") {
@@ -21,13 +9,17 @@ const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
         {optionsSort.map((option) => {
           let optionString = option as string;
           return customClass ? (
-            <OptionComponent
+            <option
               className={customClass}
               key={optionString}
               id={optionString}
-            />
+            >
+              {optionString}
+            </option>
           ) : (
-            <OptionComponent key={optionString} id={optionString} />
+            <option key={optionString} id={optionString}>
+              {optionString}
+            </option>
           );
         })}
       </select>
@@ -48,13 +40,13 @@ const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
       <select name={name} id={name}>
         {optionsSort.map((option) => {
           return customClass ? (
-            <OptionComponent
-              className={customClass}
-              key={option.name}
-              id={option.name}
-            />
+            <option className={customClass} key={option.name} id={option.name}>
+              {option.name}
+            </option>
           ) : (
-            <OptionComponent key={option.name} id={option.name} />
+            <option key={option.name} id={option.name}>
+              {option.name}
+            </option>
           );
         })}
       </select>

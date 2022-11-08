@@ -1,12 +1,12 @@
 {
   "name": "@cecigiu2b/dropdown-menu-react",
-  "main": "dist/index.tsx",
-  "module": "dist/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
   ],
-  "version": "1.5.4",
+  "version": "1.5.0",
   "private": false,
   "dependencies": {
     "@types/jest": "^29.2.0",
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": " babel src/lib --out-dir dist --copy-files ",
+    "build": " NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,11 +30,18 @@
       "react-app/jest"
     ]
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
