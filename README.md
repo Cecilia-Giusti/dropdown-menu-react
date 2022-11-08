@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.5.6
+  -Patch add types
 - v1.5.5
   -Patch refactoring
 - v1.5.4

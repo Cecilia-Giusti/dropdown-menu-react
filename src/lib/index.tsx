@@ -1,5 +1,4 @@
-import React from "react";
-import { DropdownMenuProps, optionObjectInt } from "./types";
+import { DropdownMenuProps, optionObjectInt } from "./types/types";
 
 const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
   if (typeof options[0] === "string") {
