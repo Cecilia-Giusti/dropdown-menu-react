@@ -1,12 +1,12 @@
 {
   "name": "@cecigiu2b/dropdown-menu-react",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.tsx",
+  "module": "dist/index.tsx",
   "files": [
     "dist",
     "README.md"
   ],
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": false,
   "dependencies": {
     "@types/jest": "^29.2.0",

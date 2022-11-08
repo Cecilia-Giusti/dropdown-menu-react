@@ -75,7 +75,7 @@ export default Form;
 
 ## Version history
 
-- v1.5.1
+- v1.5.2
   -Patch Update babel and update key in component
 - v1.5.0
   - Minor Update babel to TypeScript
