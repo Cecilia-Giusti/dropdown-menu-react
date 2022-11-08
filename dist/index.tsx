@@ -5,9 +5,9 @@ import {
   optionObjectInt,
 } from "./types";
 
-const OptionComponent = ({ className, id }: optionComponentInt) => {
+const OptionComponent = ({ className, key, id }: optionComponentInt) => {
   return (
-    <option className={className} id={id}>
+    <option key={key} className={className} id={id}>
       {id}
     </option>
   );
