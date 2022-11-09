@@ -2,22 +2,23 @@ import React from "react";
 const DropdownMenu = ({
   name,
   options,
-  customClass
+  customClassSelect,
+  customClassOption
 }) => {
   if (typeof options[0] === "string") {
     const optionsSort = options.sort();
     return /*#__PURE__*/React.createElement("select", {
       name: name,
-      id: name
+      id: name,
+      className: `${customClassSelect ? ` ${customClassSelect}` : ""}`,
+      "data-testid": name
     }, optionsSort.map(option => {
       let optionString = option;
-      return customClass ? /*#__PURE__*/React.createElement("option", {
-        className: customClass,
+      return /*#__PURE__*/React.createElement("option", {
+        className: `${customClassOption ? ` ${customClassOption}` : ""}`,
         key: optionString,
-        id: optionString
-      }, optionString) : /*#__PURE__*/React.createElement("option", {
-        key: optionString,
-        id: optionString
+        id: optionString,
+        "data-testid": optionString
       }, optionString);
     }));
   } else {
@@ -33,15 +34,15 @@ const DropdownMenu = ({
     });
     return /*#__PURE__*/React.createElement("select", {
       name: name,
-      id: name
+      id: name,
+      className: `${customClassSelect ? ` ${customClassSelect}` : ""}`,
+      "data-testid": name
     }, optionsSort.map(option => {
-      return customClass ? /*#__PURE__*/React.createElement("option", {
-        className: customClass,
+      return /*#__PURE__*/React.createElement("option", {
+        className: `${customClassOption ? ` ${customClassOption}` : ""}`,
         key: option.name,
-        id: option.name
-      }, option.name) : /*#__PURE__*/React.createElement("option", {
-        key: option.name,
-        id: option.name
+        id: option.name,
+        "data-testid": customClassOption
       }, option.name);
     }));
   }

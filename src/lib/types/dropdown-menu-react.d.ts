@@ -2,7 +2,8 @@ declare module "@cecigiu2b/dropdown-menu-react" {
   const DropdownMenu: React.FC<{
     name: string;
     options: Array<any>;
-    customClass?: string;
+    customClassSelect?: string;
+    customClassOption?: string;
   }>;
-  export default DropdownMenu;
+  export { DropdownMenu };
 }

@@ -1,23 +1,30 @@
 import React from "react";
 import { DropdownMenuProps, optionObjectInt } from "./types/types";
 
-const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
+const DropdownMenu = ({
+  name,
+  options,
+  customClassSelect,
+  customClassOption,
+}: DropdownMenuProps) => {
   if (typeof options[0] === "string") {
     const optionsSort = options.sort();
     return (
-      <select name={name} id={name}>
+      <select
+        name={name}
+        id={name}
+        className={`${customClassSelect ? ` ${customClassSelect}` : ""}`}
+        data-testid={name}
+      >
         {optionsSort.map((option) => {
           let optionString = option as string;
-          return customClass ? (
+          return (
             <option
-              className={customClass}
+              className={`${customClassOption ? ` ${customClassOption}` : ""}`}
               key={optionString}
               id={optionString}
+              data-testid={optionString}
             >
-              {optionString}
-            </option>
-          ) : (
-            <option key={optionString} id={optionString}>
               {optionString}
             </option>
           );
@@ -37,14 +44,20 @@ const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
       return 0;
     });
     return (
-      <select name={name} id={name}>
+      <select
+        name={name}
+        id={name}
+        className={`${customClassSelect ? ` ${customClassSelect}` : ""}`}
+        data-testid={name}
+      >
         {optionsSort.map((option) => {
-          return customClass ? (
-            <option className={customClass} key={option.name} id={option.name}>
-              {option.name}
-            </option>
-          ) : (
-            <option key={option.name} id={option.name}>
+          return (
+            <option
+              className={`${customClassOption ? ` ${customClassOption}` : ""}`}
+              key={option.name}
+              id={option.name}
+              data-testid={customClassOption}
+            >
               {option.name}
             </option>
           );

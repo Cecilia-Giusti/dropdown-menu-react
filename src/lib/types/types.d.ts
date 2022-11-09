@@ -1,7 +1,8 @@
 export interface DropdownMenuProps {
   name: string;
   options: Array<string | optionObjectInt>;
-  customClass?: string;
+  customClassSelect?: string;
+  customClassOption?: string;
 }
 
 export interface optionObjectInt {
