@@ -7,6 +7,10 @@
     "README.md"
   ],
   "version": "1.7.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cecilia-Giusti/dropdown-menu-react"
+  },
   "private": false,
   "scripts": {
     "start": "react-scripts start",

@@ -91,6 +91,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.1
+  - Patch, add github repo
 - v1.7.0
   - Minor, add style in select, data-test-id and update README
 - v1.6.1
