@@ -54,4 +54,4 @@ const DropdownMenu = ({ name, options, customClass }: DropdownMenuProps) => {
   }
 };
 
-export default DropdownMenu;
+export { DropdownMenu };

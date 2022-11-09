@@ -46,4 +46,4 @@ const DropdownMenu = ({
     }));
   }
 };
-export default DropdownMenu;
+export { DropdownMenu };
