@@ -75,6 +75,8 @@ export default Form;
 
 ## Version history
 
+- v1.6.0
+  - Minor Export index.js and types
 - v1.5.15
   - Fix export default
 - v1.5.14
