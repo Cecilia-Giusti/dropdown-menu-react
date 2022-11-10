@@ -1,6 +1,21 @@
 import React from "react";
 import { DropdownMenuProps, optionObjectInt } from "./types/types";
 
+export const optionsSortOject = (optionsObject: Array<optionObjectInt>) => {
+  return optionsObject.sort(
+    (a: { name: string | number }, b: { name: string | number }) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+
+      return 0;
+    }
+  );
+};
+
 const DropdownMenu = ({
   name,
   options,
@@ -33,16 +48,9 @@ const DropdownMenu = ({
     );
   } else {
     const optionsObject = options as Array<optionObjectInt>;
-    const optionsSort = optionsObject.sort((a, b) => {
-      if (a.name < b.name) {
-        return -1;
-      }
-      if (a.name > b.name) {
-        return 1;
-      }
 
-      return 0;
-    });
+    const optionsSort = optionsSortOject(optionsObject);
+
     return (
       <select
         name={name}
@@ -56,7 +64,7 @@ const DropdownMenu = ({
               className={`${customClassOption ? ` ${customClassOption}` : ""}`}
               key={option.name}
               id={option.name}
-              data-testid={customClassOption}
+              data-testid={option.name}
             >
               {option.name}
             </option>

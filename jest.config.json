@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "**/*.{js,jsx,tsx,ts}",
+    "src\\lib\\index.tsx",
+    "!**/node_modules/**"
+  ]
+}
