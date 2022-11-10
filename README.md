@@ -91,6 +91,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.4
+  - Patch,refactoring Dropdown
 - v1.7.3
   - Patch, add test jest, coverage and refactoring Dropdown
 - v1.7.2

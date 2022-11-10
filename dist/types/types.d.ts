@@ -6,5 +6,11 @@ export interface DropdownMenuProps {
 }
 
 export interface optionObjectInt {
+  sort(
+    arg0: (
+      a: { name: string | number },
+      b: { name: string | number }
+    ) => 0 | 1 | -1
+  ): unknown;
   name: string;
 }
