@@ -44,7 +44,10 @@ const DropdownMenu = ({
       name: name,
       id: name,
       className: `${customClassSelect ? ` ${customClassSelect}` : ""}`,
-      "data-testid": name
+      "data-testid": name,
+      onChange: e => {
+        getValue(e.target.value);
+      }
     }, optionsSort.map(option => {
       return /*#__PURE__*/React.createElement("option", {
         className: `${customClassOption ? ` ${customClassOption}` : ""}`,

@@ -62,6 +62,9 @@ const DropdownMenu = ({
         id={name}
         className={`${customClassSelect ? ` ${customClassSelect}` : ""}`}
         data-testid={name}
+        onChange={(e) => {
+          getValue(e.target.value);
+        }}
       >
         {optionsSort.map((option) => {
           return (
