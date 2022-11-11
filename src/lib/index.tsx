@@ -21,6 +21,7 @@ const DropdownMenu = ({
   options,
   customClassSelect,
   customClassOption,
+  getValue,
 }: DropdownMenuProps) => {
   if (typeof options[0] === "string") {
     const optionsSort = options.sort();
@@ -30,6 +31,9 @@ const DropdownMenu = ({
         id={name}
         className={`${customClassSelect ? ` ${customClassSelect}` : ""}`}
         data-testid={name}
+        onChange={(e) => {
+          getValue(e.target.value);
+        }}
       >
         {optionsSort.map((option) => {
           let optionString = option as string;
@@ -39,6 +43,7 @@ const DropdownMenu = ({
               key={optionString}
               id={optionString}
               data-testid={optionString}
+              value={optionString}
             >
               {optionString}
             </option>
@@ -65,6 +70,7 @@ const DropdownMenu = ({
               key={option.name}
               id={option.name}
               data-testid={option.name}
+              value={option.name}
             >
               {option.name}
             </option>

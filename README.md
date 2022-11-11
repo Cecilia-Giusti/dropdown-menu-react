@@ -19,12 +19,14 @@ configuration is required in the file tsconfig.json.
 
 ## Props required
 
-| Prop    | Type   |
-| ------- | ------ |
-| name    | string |
-| options | Array  |
+| Props    | Types                  |
+| -------- | ---------------------- |
+| name     | string                 |
+| options  | Array                  |
+| getValue | SetStateAction<string> |
 
 **props options must be array type of string or array of object with a key "name"**
+The prop getValue returns the value of the option chosen by the user.
 
 ## Style
 
@@ -41,6 +43,7 @@ In the project directory, you can run:
 
 ```
 import { DropdownMenu } from '@cecigiu2b/dropdown-menu'
+import { useState } from 'React'
 
 const departements = [
   "Sales",
@@ -70,6 +73,8 @@ const states = [
   },
 ]
 
+const [valueSelect, setValueSelect] = useState(null)
+
 const Form = () => {
    return (
     <div>
@@ -79,6 +84,7 @@ const Form = () => {
           options={departements}
           customClassSelect="dropdownSelect"
           customClassOption="dropdownOption"
+          getValue={setValueSelect}
         />
         <DropdownMenu name="states" options={states} />
       </form>
@@ -91,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.5
+  - Patch, get value with state
 - v1.7.4
   - Patch,refactoring Dropdown
 - v1.7.3
