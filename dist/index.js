@@ -14,7 +14,8 @@ const DropdownMenu = ({
   name,
   options,
   customClassSelect,
-  customClassOption
+  customClassOption,
+  getValue
 }) => {
   if (typeof options[0] === "string") {
     const optionsSort = options.sort();
@@ -22,14 +23,18 @@ const DropdownMenu = ({
       name: name,
       id: name,
       className: `${customClassSelect ? ` ${customClassSelect}` : ""}`,
-      "data-testid": name
+      "data-testid": name,
+      onChange: e => {
+        getValue(e.target.value);
+      }
     }, optionsSort.map(option => {
       let optionString = option;
       return /*#__PURE__*/React.createElement("option", {
         className: `${customClassOption ? ` ${customClassOption}` : ""}`,
         key: optionString,
         id: optionString,
-        "data-testid": optionString
+        "data-testid": optionString,
+        value: optionString
       }, optionString);
     }));
   } else {
@@ -45,7 +50,8 @@ const DropdownMenu = ({
         className: `${customClassOption ? ` ${customClassOption}` : ""}`,
         key: option.name,
         id: option.name,
-        "data-testid": option.name
+        "data-testid": option.name,
+        value: option.name
       }, option.name);
     }));
   }

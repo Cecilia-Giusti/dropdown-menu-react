@@ -3,6 +3,7 @@ export interface DropdownMenuProps {
   options: Array<string | optionObjectInt>;
   customClassSelect?: string;
   customClassOption?: string;
+  getValue: Dispatch<React.SetStateAction<string | null>>;
 }
 
 export interface optionObjectInt {

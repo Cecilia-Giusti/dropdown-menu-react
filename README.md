@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.6
+  - Patch, update exemple in README
 - v1.7.5
   - Patch, get value with state
 - v1.7.4

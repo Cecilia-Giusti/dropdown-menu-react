@@ -9,6 +9,7 @@ describe("Given the component is add with an array and string", () => {
       name: "nameTest",
       options: ["option1", "option2"],
     };
+
     render(
       <DropdownMenu
         name={dropdownMenuMocked.name}
