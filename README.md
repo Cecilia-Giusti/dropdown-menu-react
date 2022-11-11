@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.7
+  - Patch, update file d.ts
 - v1.7.6
   - Patch, update exemple in README
 - v1.7.5
