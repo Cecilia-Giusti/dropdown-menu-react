@@ -41,7 +41,7 @@ const DropdownMenu = ({
           className={`${customClassOption ? ` ${customClassOption}` : ""}`}
           value=""
         >
-          --Please choose an option--
+          Choose an option
         </option>
         {optionsSort.map((option) => {
           let optionString = option as string;
@@ -80,7 +80,7 @@ const DropdownMenu = ({
           className={`${customClassOption ? ` ${customClassOption}` : ""}`}
           value=""
         >
-          --Please choose an option--
+          Choose an option
         </option>
         {optionsSort.map((option) => {
           return (

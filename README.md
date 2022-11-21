@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.10
+  - Fix, change text in option default
 - v1.7.9
   - Patch, add an option to choose
 - v1.7.8

@@ -32,7 +32,7 @@ const DropdownMenu = ({
       "data-testid": `${name}__optionChoose`,
       className: `${customClassOption ? ` ${customClassOption}` : ""}`,
       value: ""
-    }, "--Please choose an option--"), optionsSort.map(option => {
+    }, "Choose an option"), optionsSort.map(option => {
       let optionString = option;
       return /*#__PURE__*/React.createElement("option", {
         className: `${customClassOption ? ` ${customClassOption}` : ""}`,
@@ -58,7 +58,7 @@ const DropdownMenu = ({
       "data-testid": `${name}__optionChoose`,
       className: `${customClassOption ? ` ${customClassOption}` : ""}`,
       value: ""
-    }, "--Please choose an option--"), optionsSort.map(option => {
+    }, "Choose an option"), optionsSort.map(option => {
       return /*#__PURE__*/React.createElement("option", {
         className: `${customClassOption ? ` ${customClassOption}` : ""}`,
         key: option.name,
