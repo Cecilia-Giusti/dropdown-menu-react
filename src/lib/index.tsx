@@ -35,6 +35,14 @@ const DropdownMenu = ({
           getValue(e.target.value);
         }}
       >
+        <option
+          id={`${name}__optionChoose`}
+          data-testid={`${name}__optionChoose`}
+          className={`${customClassOption ? ` ${customClassOption}` : ""}`}
+          value=""
+        >
+          --Please choose an option--
+        </option>
         {optionsSort.map((option) => {
           let optionString = option as string;
           return (
@@ -66,6 +74,14 @@ const DropdownMenu = ({
           getValue(e.target.value);
         }}
       >
+        <option
+          id={`${name}__optionChoose`}
+          data-testid={`${name}__optionChoose`}
+          className={`${customClassOption ? ` ${customClassOption}` : ""}`}
+          value=""
+        >
+          --Please choose an option--
+        </option>
         {optionsSort.map((option) => {
           return (
             <option

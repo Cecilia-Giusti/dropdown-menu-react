@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.9
+  - Patch, add an option to choose
 - v1.7.8
   - Patch, fix onChange for object
 - v1.7.7
