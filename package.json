@@ -11,6 +11,12 @@
     "type": "git",
     "url": "https://github.com/Cecilia-Giusti/dropdown-menu-react"
   },
+  "license": "MIT",
+  "keywords": [
+    "React component",
+    "dropdown",
+    "select"
+  ],
   "private": false,
   "scripts": {
     "start": "react-scripts start",
