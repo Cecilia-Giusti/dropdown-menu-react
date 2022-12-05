@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.13
+  - Docs: fix gitignore
 - v1.7.12
   - Docs: update README
 - v1.7.11
