@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.12
+  - Docs: update README
 - v1.7.11
   - Docs: update licence and keywords
 - v1.7.10
@@ -134,4 +136,9 @@ export default Form;
 - v1.2.0
   - Feat : add style to option(s)
 - v1.0.0
+
   - Version initiale
+
+  ## Licence
+
+  [MIT](https://spdx.org/licenses/MIT.html)
