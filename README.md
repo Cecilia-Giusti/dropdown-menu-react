@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.8-0
+  - Feat: update to common JS
 - v1.7.14
   - Fix: add type module
 - v1.7.13
