@@ -97,6 +97,8 @@ export default Form;
 
 ## Version history
 
+- v1.7.14
+  - Fix: add type module
 - v1.7.13
   - Docs: fix gitignore
 - v1.7.12
